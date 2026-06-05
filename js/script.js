@@ -2,8 +2,9 @@ const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 const bookingForm = document.getElementById("bookingForm");
 
-const API_URL ="https://script.google.com/macros/s/AKfycbwBgCKM8WUp3Nqy0d82dYLaaKJxBrTvczoZJEXyZxx9GsENVk_qeZ8JktePvnZptNo6pA/exec";
-  
+const API_URL =
+  "https://script.google.com/macros/s/AKfycbwBgCKM8WUp3Nqy0d82dYLaaKJxBrTvczoZJEXyZxx9GsENVk_qeZ8JktePvnZptNo6pA/exec";
+
 const phoneNumber = "50254152272";
 
 menuBtn.addEventListener("click", () => {
@@ -48,15 +49,19 @@ Hora: ${time}`;
       return;
     }
 
-    alert("Cita registrada correctamente.");
-
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
 
-    window.location.href = whatsappURL;
+    document.getElementById("whatsappButton").href = whatsappURL;
+
+    document.getElementById("successContainer").style.display = "block";
 
     bookingForm.reset();
+
+    document
+      .getElementById("successContainer")
+      .scrollIntoView({ behavior: "smooth" });
   };
 
   const params = new URLSearchParams({
