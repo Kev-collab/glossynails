@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>GlossyNails | Uñas Acrílicas</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <h1 class="logo">GlossyNails</h1>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#agenda">Agendar</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <a class="whatsapp-float" href="https://wa.me/50254152272" target="_blank">
+    <img src="img/whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <section class="hero" id="inicio">
+    <div class="hero-text reveal">
+      <span class="tag">Uñas acrílicas • diseño • elegancia</span>
+
+      <h2>Realza tu estilo con uñas hermosas y femeninas</h2>
+
+      <p>
+        En GlossyNails creamos diseños delicados, modernos y elegantes para que tus manos luzcan increíbles.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#agenda" class="btn-primary">Agendar cita</a>
+        <a href="#galeria" class="btn-secondary">Ver diseños</a>
+      </div>
+    </div>
+
+    <div class="hero-images reveal">
+      <img src="img/nails1.jpg" class="float-img img-one" alt="Diseño de uñas acrílicas">
+      <img src="img/nails2.jpg" class="float-img img-two" alt="Uñas rosadas elegantes">
+    </div>
+  </section>
+
+  <section class="services reveal" id="servicios">
+    <h2>Servicios</h2>
+    <p class="section-text">Elige el estilo que más va contigo.</p>
+
+    <div class="cards">
+      <div class="card glossy-card">
+        <h3>Uñas Clásicas</h3>
+        <p>Diseños limpios, naturales y elegantes.</p>
+      </div>
+
+      <div class="card glossy-card">
+        <h3>Diseño Glam</h3>
+        <p>Brillos, pedrería, efectos y detalles únicos.</p>
+      </div>
+
+      <div class="card glossy-card">
+        <h3>Diseño Personalizado</h3>
+        <p>Inspirado en tu estilo, evento o referencia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery reveal" id="galeria">
+    <h2>Galería</h2>
+    <p class="section-text">Algunos estilos que puedes usar como inspiración.</p>
+
+    <div class="gallery-grid">
+      <img src="img/nails1.jpg" alt="Uñas acrílicas">
+      <img src="img/nails2.jpg" alt="Uñas acrílicas">
+      <img src="img/nails3.jpg" alt="Uñas acrílicas">
+      <img src="img/nails4.jpg" alt="Uñas acrílicas">
+    </div>
+  </section>
+
+  <section class="booking reveal" id="agenda">
+    <h2>Agenda tu cita</h2>
+    <p class="section-text">Selecciona el estilo, largo, fecha y hora para enviar tu cita por WhatsApp.</p>
+
+    <form id="bookingForm" class="booking-form glossy-card">
+      <input type="text" id="name" placeholder="Tu nombre" required>
+
+      <select id="style" required>
+        <option value="">Selecciona el estilo</option>
+        <option value="Clásicas">Clásicas</option>
+        <option value="Francesas">Francesas</option>
+        <option value="Glam con brillo">Glam con brillo</option>
+        <option value="Diseño personalizado">Diseño personalizado</option>
+      </select>
+
+      <select id="length" required>
+        <option value="">Selecciona el largo</option>
+        <option value="Cortas">Cortas</option>
+        <option value="Medianas">Medianas</option>
+        <option value="Largas">Largas</option>
+        <option value="XL">XL</option>
+      </select>
+
+      <label class="form-label">Fecha de la cita</label>
+      <input type="date" id="date" required>
+
+      <label class="form-label">Hora de la cita</label>
+      <input type="time" id="time" required>
+
+      <button type="submit" class="btn-primary">Enviar cita por WhatsApp</button>
+    </form>
+  </section>
+
+  <section class="contact reveal" id="contacto">
+    <h2>Contacto</h2>
+    <p>Síguenos o agenda directamente.</p>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="img/instagram.png" alt="Instagram">
+        Instagram
+      </a>
+
+      <a href="https://www.tiktok.com/" target="_blank">
+        <img src="img/tiktok.png" alt="TikTok">
+        TikTok
+      </a>
+
+      <a href="https://wa.me/50254152272" target="_blank">
+        <img src="img/whatsapp.png" alt="WhatsApp">
+        WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 GlossyNails. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
