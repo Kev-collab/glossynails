@@ -353,9 +353,11 @@
   }
   
   .social-links img {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
   }
   
   .whatsapp-float {
@@ -380,9 +382,10 @@
   }
   
   .whatsapp-float img {
-    width: 137%;
-    height: 137%;
+    width: 180%;
+    height: 180%;
     object-fit: cover;
+    display: block;
   }
   
   @keyframes pulse {
